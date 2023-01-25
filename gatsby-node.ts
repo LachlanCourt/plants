@@ -38,7 +38,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       component: `${pageTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
       context: {
         pagePath: path,
-        children: node.body,
       },
     });
   });
