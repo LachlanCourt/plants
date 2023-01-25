@@ -17,14 +17,14 @@ const Layout = ({children, ...data}) => {
     </MDXProvider>)
 }
 
-export const pageQuery = graphql`
-  query ($id: String!) {
-    mdx(id: { eq: $id }) {
-      frontmatter {
-        title
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query ($id: String!) {
+//     mdx(id: { eq: $id }) {
+//       frontmatter {
+//         title
+//       }
+//     }
+//   }
+// `
 
 export default Layout
