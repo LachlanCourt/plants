@@ -13,7 +13,6 @@ export const Grid = ({children, columns = 2}) => {
             }}
         >
             {content.map((child, index) => {
-                console.log(child)
                 return (
                     <div style={{width: `${width}%`}} key={index}>{child}</div>
                 )

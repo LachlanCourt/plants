@@ -24,8 +24,6 @@ const IndexPage: React.FC<PageProps> = ({data}: IndexProps) => {
   const files:Array<QueryData> = data?.allMdx?.nodes?.filter((node) => {
     return node.frontmatter.title_image_name !== null;
   }) || []
-
-  console.log(files)
   
   return (
     <div style={{
