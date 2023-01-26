@@ -18,7 +18,15 @@ const Layout = ({children, ...data}) => {
       
         <div style={{margin: '0.3rem', paddingTop: '0.6rem'}}>
         <a href={'/'}
-           style={{fontSize: '1.6rem', textDecoration: 'none', color: '#DDDDDD', background: '#07590F', padding: '0.3rem',  borderRadius: '0.6rem',boxShadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2)'}}
+           style={{
+            fontSize: '1.6rem', 
+            textDecoration: 'none', 
+            color: '#DDDDDD', 
+            background: 'linear-gradient(45deg, #07590F, #297B2F)', 
+            padding: '0.3rem',  
+            borderRadius: '0.6rem',
+            boxShadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2)',
+           }}
         >
            Back
         </a></div>
