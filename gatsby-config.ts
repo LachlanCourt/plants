@@ -43,7 +43,6 @@ const config: GatsbyConfig = {
       },
       __key: "pages",
     },
-    // `gatsby-transformer-remark`,
   ],
 };
 

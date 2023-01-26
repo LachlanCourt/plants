@@ -4,10 +4,18 @@ slug: /test/testing
 date: 2019-08-25
 ---
 
-import { Panel } from "../../components/Panel";
-
-<Panel />
+import { Card } from "../../components/Card";
+import { Grid } from "../../components/Grid";
 
 # HELLO
 
-Plants are happy little friends that need water and sunlight
+<Card>Plants are happy little friends that need water and sunlight</Card>
+The following grid is dynamically calculated
+<Grid columns={2}>
+  <Card>One piece of data</Card>
+  <Card>Another piece of data</Card>
+  <Card>Another piece of data</Card>
+  <Card>Another piece of data</Card>
+  <Card>Another piece of data</Card>
+  <Card>Another piece of data</Card>
+</Grid>
