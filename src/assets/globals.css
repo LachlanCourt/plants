@@ -1,5 +1,11 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+
 body {
   background: linear-gradient(#81c26e 25%, #eeeeee);
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
+  max-width: 400px
 }
