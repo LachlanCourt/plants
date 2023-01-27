@@ -1,17 +1,17 @@
+name: Build and Push
 
-# name: Build test
+on:
+  pull_request:
+    branches:
+      - main
 
-# on:
-#   pull_request:
-#     branches: [ main ]
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-
-#     steps:
-    # - uses: actions/checkout@v2
-    # - uses: DoozyX/clang-format-lint-action@v0.12
-    #   with:
-    #     clangFormatVersion: 12
-    #     extensions: 'java'
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Build Docker Image
+      run: |
+        docker build -t plants .
+    
