@@ -20,7 +20,7 @@ jobs:
     - name: Login to GitHub Container Registry
       run: echo ${{ secrets.REPOSITORY_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
     - name: Get Repository name
-      run: echo ::set-env name=USER_REPOSITORY::$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')
+      run: echo USER_REPOSITORY=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]') >> $GITHUB_ENV
     - name: Push Docker Image
       run: |
         docker tag plants:build ghcr.io/${{ env.USER_REPOSITORY }}:latest
