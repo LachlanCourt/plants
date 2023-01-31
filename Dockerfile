@@ -2,7 +2,10 @@ FROM node:19-alpine3.16 as base
 COPY . ./code
 WORKDIR /code
 
-RUN yarn install
+RUN apk add --no-cache jq
+RUN jq 'del(.devDependencies)' package.json > package.json.temp && mv package.json.temp package.json
+
+RUN yarn install --production --no-optional
 RUN yarn build
 
 FROM node:19-alpine3.16 as final
