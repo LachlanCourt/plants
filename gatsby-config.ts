@@ -13,6 +13,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-vanilla-extract",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-tsconfig-paths",
     {
       resolve: "gatsby-plugin-manifest",
       options: {

@@ -1,2 +1,11 @@
+.cache
+.github
 node_modules
 public
+scripts
+.dockerignore
+.gitignore
+Dockerfile
+Makefile
+*.md
+*.log
